@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font: montserrat, sans-serif;
+  scroll-padding-top: 80px;
+}
+
+.active {
+  color: #dc3545 !important;
+  border-bottom: 1px solid #dc3545 !important;
+}
+nav .navbar-brand {
+  font-family: viga;
+}
+nav .nav-link {
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+nav .nav-link:hover {
+  color: #dc3545 !important;
+}
+
+#about {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#about .jumbotron-display h1 {
+  font-size: 7vw;
+}
+#about .jumbotron-display p {
+  color: grey;
+}
+#submit {
+  padding: 10px 30px;
+  margin-left: -7px;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+#tutorial {
+  margin-right: 0px;
+}
+
+#tutorial h2,
+.video {
+  text-align: center;
+  margin: 20px 0;
+}
+#product {
+  margin-right: 0px;
+}
+#product .card {
+  margin: 20px 10px;
+}
+
+.card {
+  transition: 0.5s;
+}
+.card:hover {
+  border: 1px solid #dc3545;
+  box-shadow: 2px 1px 10px #dc3545 !important;
+}
+
+.card span {
+  font-size: 0.8em;
+  float: right;
+}
+#description {
+  text-align: center;
+}
+#description p {
+  color: grey;
+}
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  padding-bottom: 20px !important;
+}
+.swiper-button-next {
+  transform: translateX(10px);
+}
+.swiper-button-prev {
+  transform: translateX(-10px);
+}
+.swiper-pagination {
+  transform: translateY(15px);
+}
+#subs {
+  transform: translateY(6em);
+  padding: 3em 4em;
+  border-radius: 10px;
+  background: #fff !important;
+}
+#email,
+#submit {
+  float: none;
+}
+
+footer {
+  padding: 10em 0;
+}
+footer .navbar-brand {
+  font-family: viga;
+  color: black;
+}
+footer li {
+  margin: 10px 0;
+  /* line-style: none; */
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  #about {
+    text-align: left;
+  }
+  #about .jumbotron-display h1 {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #description {
+    text-align: left;
+  }
+  #email,
+  #submit {
+    float: right;
+    text-align: center;
+  }
+}
